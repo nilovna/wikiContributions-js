@@ -44,7 +44,7 @@
               </span>
               <input class="form-control" ng-model="user" placeholder="Username" type="text">
             </div>
-            <button class="btn btn-primary" ng-click="search(domain, user, minors)" type="submit">
+            <button class="btn btn-primary" ng-click="search(domain, user, minors); pageContribution = true" type="submit">
               <span class="glyphicon glyphicon-search"></span>
             </button>
             <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">
