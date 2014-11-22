@@ -132,13 +132,13 @@
             <div class="col-md-8 scrollable" ng-controller="TabsCtrl">
               <tabset>
                 <tab heading="Details" active="true">
-                  <div class="spinner" ng-show="loading">
-                    <img src="loading-bubbles.svg" width="64" height="64">
-                  </div>
                   <h1>Contribution Details</h1>
                   <div ng-switch on="talkParticipation">
                       <div ng-switch-when="true" class="bg-success user-contrib">User contributed to the discussion on this article</div>
                       <div ng-switch-when="false" class="bg-danger user-contrib">User did not contribute to the discussion on this article!</div>
+                  </div>
+                  <div class="spinner" ng-show="loading">
+                    <img src="loading-bubbles.svg" width="64" height="64">
                   </div>
                 </tab>
                 <tab heading="Changes">
