@@ -81,9 +81,14 @@ function run_tests(){
 
 var caseModules = {
 	"nbRef":{
-		"data": [
+		"data": ['<ins><p>The webcomic <a title="Xkcd" href="/wiki/Xkcd">xkcd</a> by Randall Munroe illustrated the landing event live with a 152 drawing <a title="Flip book" href="/wiki/Flip_book">flip book</a>' +
+				'book narrating the probe and the orbiter.<sup id="cite_ref-89" class="reference"><a href="#cite_note-89"><span></span>89<span></span></a></sup></ins>',
+				'<del><p>The webcomic <a title="Xkcd" href="/wiki/Xkcd">xkcd</a> by Randall Munroe illustrated the landing event live with a 152 drawing <a title="Flip book" href="/wiki/Flip_book">flip book</a>' +
+				'book narrating the probe and the orbiter.<sup id="cite_ref-89" class="reference"><a href="#cite_note-89"><span></span>89<span></span></a></sup></del>',
+				'<ins><p>The webcomic</p></ins>',
+				'<ins><p><a title="Test" href="/wiki/test">test</a></p></ins>'
 		],
-		"expected":[
+		"expected":[3,0,0,1
 		]
 	},
 	"rapportSommaireGlobal": {
@@ -160,7 +165,7 @@ var caseModules = {
 			    }
 			}
 		],
-		"expected" = [
+		"expected" : [
 			{
 				"user":"Nowa",
 				"nombreArticles":5,
@@ -170,7 +175,7 @@ var caseModules = {
 				"nbRetraits":0,
 				"nbCommentaires":0,
 				"nbCommentairesReponses":0,
-				"nbReponses":0;
+				"nbReponses":0
 			}
 		]
 	}
