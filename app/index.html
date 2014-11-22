@@ -44,15 +44,15 @@
             <button class="btn btn-primary" ng-click="search(domain, user, minors)" type="submit">
               <span class="glyphicon glyphicon-search"></span>
             </button>
-            <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">
-              <span class="glyphicon" ng-class="{'glyphicon-chevron-up': isCollapsed, 'glyphicon-chevron-down': !isCollapsed}"></span>
+            <button class="btn btn-default" ng-click="isAdvancedSearchCollapsed = !isAdvancedSearchCollapsed">
+              <span class="glyphicon" ng-class="{'glyphicon-chevron-up': isAdvancedSearchCollapsed, 'glyphicon-chevron-down': !isAdvancedSearchCollapsed}"></span>
             </button>
           </form>
         </div>
       </nav>
 
       <!-- Recherche Wiki : Options avancées -->
-      <div collapse="!isCollapsed" class="container">
+      <div collapse="!isAdvancedSearchCollapsed" class="container">
         <div class="advanced-search-wrapper clearfix">
           <h3 class="advanced-search-title">Advanced Search</h3>
           <div class="navbar-form navbar-right">
