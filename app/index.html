@@ -171,8 +171,7 @@
         <div ng-switch-when="false" class="max-height">
           <div class="col-md-12 scrollable">
             <h2>Rapport</h2>
-            <p>L'utilisateur <strong>{{ user }}</strong> a fait <strong>{{ contributions.length
-              }}</strong> contributions.</p>
+            <p>L'utilisateur <strong>{{ user }}</strong> a fait <span ng-show="contributions.length >= 500">au moins</span> <strong>{{ contributions.length }}</strong> contributions.</p>
           </div>
         </div>
       </div>
