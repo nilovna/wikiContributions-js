@@ -53,6 +53,9 @@ body, html {
     padding: 15px;
 }
 
+.nav-site {
+    margin-bottom: 1em;
+}
 /* Loading Spinner */
 .spinner {
     text-align: center;
@@ -84,3 +87,4 @@ body, html {
     -ms-user-select: none;
     user-select: none;
 }
+
