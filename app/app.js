@@ -58,6 +58,15 @@ grisouApp.controller('ContributionListCtrl', function ($http, $scope, Contributi
     $scope.contributions = Contributions.query({
       domain:  domain,
       ucuser:  user,
+      ucnamespace: 0,
+      ucshow:  $scope.includeMinorEdits ? [] : ['!minor'],
+      ucstart: $scope.startDate,
+      ucend:   $scope.endDate
+    });
+    $scope.talks = Contributions.query({
+      domain:  domain,
+      ucuser:  user,
+      ucnamespace: 1,
       ucshow:  $scope.includeMinorEdits ? [] : ['!minor'],
       ucstart: $scope.startDate,
       ucend:   $scope.endDate
