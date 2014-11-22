@@ -117,10 +117,10 @@
             <tab heading="Talks">
               <div class="list-group scrollable">
                 <a href="#" class="list-group-item" ng-class="{ 'active': $index == selectedIndex }" 
-		        				 ng-click="itemClicked($index, domain)" ng-repeat="contribution in contributions | filter: query">
-                  <span class="badge">{{ contribution.size }}</span>
-                  <h4 class="list-group-item-heading">{{ contribution.title }}</h4>
-                  <p class="list-group-item-text">{{ contribution.timestamp | date }}</p>
+		        				 ng-click="itemClicked($index, domain)" ng-repeat="talk in talks | filter: query">
+                  <span class="badge">{{ talk.size }}</span>
+                  <h4 class="list-group-item-heading">{{ talk.title }}</h4>
+                  <p class="list-group-item-text">{{ talk.timestamp | date }}</p>
                 </a>
               </div><!-- .list-group -->
             </tab>
