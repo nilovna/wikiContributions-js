@@ -41,17 +41,23 @@ var testCase1 = {
 function mockRapportSommaireGlobal(data){
 
 }
+function mockNbRef(data){
 
+
+}
+
+function testNbReference(){
+	
+}
 /**
  * On lance les tests pour un rapport sommaire global
  */
 function testRappportSommaireGlobal(){
 
 	// Case #1
-
+	
 
 }
-
 function rapportSommaireArticle(){
 	return {
 		"nom":"Mon Premier Article",
@@ -74,8 +80,14 @@ function run_tests(){
 }
 
 var caseModules = {
-	"rapportSommaireGlobal" = {
-		"data" = [
+	"nbRef":{
+		"data": [
+		],
+		"expected":[
+		]
+	},
+	"rapportSommaireGlobal": {
+		"data": [
 			{
 			    "query-continue": {
 			        "usercontribs": {
@@ -162,13 +174,13 @@ var caseModules = {
 			}
 		]
 	}
+	}
 
-	function replaceValues(value,template){
-        for (var key in value) {
-            if (value.hasOwnProperty(key)) {
-	            template=template.replace("{{"+value[key]+"}}", value[key]); 
-            }
-        }
-        return template;
-    }
+function replaceValues(value,template){
+	for (var key in value) {
+		if (value.hasOwnProperty(key)) {
+			template=template.replace("{{"+value[key]+"}}", value[key]); 
+		}
+	}
+	return template;
 }
