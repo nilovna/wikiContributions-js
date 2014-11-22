@@ -13,6 +13,7 @@ grisouApp.factory('Contributions', ['$resource', function ($resource) {
           prop:   'text'
         },
         transformResponse: function (data) {
+          console.log(data);
           return angular.fromJson(data).parse;
         }
       },
@@ -25,6 +26,7 @@ grisouApp.factory('Contributions', ['$resource', function ($resource) {
         },
         isArray: true,
         transformResponse: function (data) {
+          console.log(data);
           return angular.fromJson(data).query.usercontribs;
         }
       }
