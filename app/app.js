@@ -52,6 +52,9 @@ grisouApp.controller('ContributionListCtrl', function ($http, $scope, Contributi
       domain: domain,
       ucuser: user,
       ucshow: minors ? [] : ['!minor']
+    }, function () {
+        $scope.selectedIndex = null;
+        $scope.revision = null;
     });
   }
 });
